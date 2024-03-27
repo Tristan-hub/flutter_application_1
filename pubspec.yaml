@@ -1,0 +1,36 @@
+name: flutter_application_1
+description: Une nouvelle application Flutter.
+
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^0.22.0  # Assurez-vous de vérifier la dernière version sur pub.dev
+  http: ^0.13.3         # Assurez-vous de vérifier la dernière version sur pub.dev
+  flutter_lints: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/svg/astronaut.svg
+    - lib/assets/svg/ic_books_bicolor.svg
+    - lib/assets/svg/ic_calendar_bicolor.svg
+    - lib/assets/svg/ic_movie_bicolor.svg
+    - lib/assets/svg/ic_publisher_bicolor.svg
+    - lib/assets/svg/ic_tv_bicolor.svg
+    - lib/assets/svg/navbar_comics.svg
+    - lib/assets/svg/navbar_home.svg
+    - lib/assets/svg/navbar_movies.svg
+    - lib/assets/svg/navbar_search.svg
+    - lib/assets/svg/navbar_series.svg
