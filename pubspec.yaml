@@ -34,3 +34,10 @@ flutter:
     - lib/assets/svg/navbar_movies.svg
     - lib/assets/svg/navbar_search.svg
     - lib/assets/svg/navbar_series.svg
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: lib/assets/fonts/Nunito/static/Nunito-Regular.ttf
+        - asset: lib/assets/fonts/Nunito/static/Nunito-Bold.ttf
+          weight: 700

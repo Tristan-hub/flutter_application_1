@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'custom_card.dart'; // Assurez-vous que le chemin est correct
+import 'custom_card.dart';
 
 class SectionWithCards extends StatelessWidget {
   final String title;
   final VoidCallback onViewMorePressed;
-  final List<Widget> cards; // Cette liste doit être fournie lors de la création de l'instance de SectionWithCards
+  final List<Widget> cards; 
 
   SectionWithCards({
     required this.title,
@@ -15,11 +15,11 @@ class SectionWithCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 424, // Largeur spécifiée pour le conteneur de la section
+      width: 424, 
       height: 329,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20), // Arrondi des angles
-        color: Color.fromRGBO(30, 50, 67, 1), // Couleur de fond
+        borderRadius: BorderRadius.circular(20), 
+        color: Color.fromRGBO(30, 50, 67, 1), 
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -31,7 +31,7 @@ class SectionWithCards extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    // Petit cercle orange
+                    
                     Container(
                       width: 8,
                       height: 8,
@@ -41,14 +41,14 @@ class SectionWithCards extends StatelessWidget {
                       ),
                       margin: EdgeInsets.only(right: 8),
                     ),
-                    // Titre de la section
+                    
                     Text(
                       title,
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                   ],
                 ),
-                // Bouton "Voir plus"
+                
                 GestureDetector(
                   onTap: onViewMorePressed,
                   child: Container(
@@ -70,10 +70,10 @@ class SectionWithCards extends StatelessWidget {
             ),
           ),
           Container(
-            height: 242, // Hauteur spécifiée pour le conteneur des cartes
+            height: 242,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: cards, // Ici, vous insérez votre liste de CustomCard
+              children: cards, 
             ),
           ),
         ],
